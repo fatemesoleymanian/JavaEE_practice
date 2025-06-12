@@ -5,10 +5,9 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-
 <form action="upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="files" placeholder="upload your file" multiple>
-    <input type="submit">
+<input type="file" name="files" placeholder="upload your file" multiple>
+<input type="submit">
 
 </form>
 </body>
