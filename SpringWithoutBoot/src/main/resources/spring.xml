@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.Dev" id="dev" autowire="byName">
+<!--        <property name="age" value="12" /> &lt;!&ndash;setter injection&ndash;&gt;-->
+<!--        <property name="laptop" ref="laptop1"/> &lt;!&ndash; setter injection &ndash;&gt;-->
+<!--        <constructor-arg name="age" value="14" />&lt;!&ndash; constructor injection &ndash;&gt;-->
+<!--        <constructor-arg ref="laptop1"/> &lt;!&ndash;constructor injection &ndash;&gt;-->
+    </bean>
+
+    <bean class="org.example.Laptop" id="laptop" primary="true"/>
+    <bean class="org.example.Desktop" id="computer"/>
+
+</beans>
