@@ -8,10 +8,10 @@ import org.hibernate.cfg.Configuration;
 
 public class Main {
     public static void main(String[] args) {
-        Student student = new Student();
+//        Student student = new Student();
 //        student.setId(3);
-        student.setName("Reyhane");
-        student.setTech("Cooking");
+//        student.setName("Ali");
+//        student.setTech("War");
 
 //        Configuration config = new Configuration();
 //
@@ -24,25 +24,25 @@ public class Main {
                 .buildSessionFactory();
 
         Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
+//        Transaction transaction = session.beginTransaction();
 
         /**                 UPDATE  */
 //        session.merge(student); // update or create
 
         /**             CREATE */
-        session.persist(student);
+//        session.persist(student);
 
         /**               GET */
-//        Student student = session.find(Student.class,2);//eager loading
+        Student student = session.find(Student.class,2);//eager loading
 //        Student student = session.byId(Student.class).load(1);or
        // Student student = session.byId(Student.class).getReference(1);//lazy loading
-//        System.out.println(student);
+        System.out.println(student);
 
         /**                 DELETE*/
 //        Student selectedStudent = session.find(Student.class,3);
 //        session.remove(selectedStudent);
 
-        transaction.commit();
+//        transaction.commit();
 
         session.close();
         factory.close();
