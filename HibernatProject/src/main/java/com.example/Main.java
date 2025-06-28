@@ -6,8 +6,9 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 
-public class Main {
-    public static void main(String[] args) {
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println();
 //        Student student = new Student();
 //        student.setId(3);
 //        student.setName("Ali");
